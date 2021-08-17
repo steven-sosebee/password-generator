@@ -110,6 +110,6 @@ function generatePassword(){
 // Close input form
 
 function closeForm(){
-document.getElementById("formPassword").style.display="none";
+document.getElementById("frmPassword").style.display="none";
 document.getElementById("generate").disabled = false;
 }

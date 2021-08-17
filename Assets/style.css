@@ -130,6 +130,7 @@ pop-up{
   box-shadow: grey 5px;
   /* visibility: hidden; */
   display: none;
+  clear:both;
 }
 
 question{
@@ -180,5 +181,11 @@ form input{
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  pop-up{
+    display: block;
   }
 }
