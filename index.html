@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <pop-up id="frmPassword">
+            <form action="javascript:submitform()" id="options">
+              <question>
+                <label for="length">Password length:</label>
+                <input type="number" name="length" id="frm-length" value="16" min="8" max="128"/>
+              </question>
+              <question>
+                <label for="uppper">Include upper case: </label>
+                <input type="checkbox" name="upper" id="frm-upper" checked/>
+              </question>
+              <question >
+                <label for="lower">Include lower case: </label>
+                <input type="checkbox" name="lower" id="frm-lower" checked/>
+              </question>
+              <question >
+                <label for="symbols">Include symbols: </label>
+                <input type="checkbox" name="symbols" id="frm-symbols" checked/>
+              </question>
+              <question >
+                <label for="numbers">Include numbers: </label>
+                <input type="checkbox" name="numbers" id="frm-numbers" checked/>
+              </question>
+              <question>
+                <button type="button" name="submit" id="frm-submit" onclick="generatePassword()">Submit</button>              
+              </question>
+              <question>
+                <button type="button" name="close" id="frm-close" onclick="closeForm()">Close</button>
+              </question>
+            </form>
+          </pop-up>
+          <button id="generate" class="btn" 
+          >Generate Password</button>
+          
+        </div>
+      </div>
+    </div>
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>
