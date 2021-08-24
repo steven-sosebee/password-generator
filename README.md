@@ -63,7 +63,7 @@ THEN the password is either displayed in an alert or written to the page
 - [x] Repository contains multiple descriptive commit messages.
 
 - [x] Repository contains quality readme file with description, screenshot, and link to deployed application.
-![Interface](./assets/interface.png)
+[Interface](./assets/interface.png)
 ## Review
 
 You are required to submit the following for review:
